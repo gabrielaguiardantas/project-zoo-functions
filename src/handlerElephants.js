@@ -17,7 +17,7 @@ const computeData = (param, elephants) => {
   default:
     return null;
   }
-};
+}; console.log(computeData('names', getElephants()));
 
 const handlerElephants = (param) => {
   if (param === undefined) {
