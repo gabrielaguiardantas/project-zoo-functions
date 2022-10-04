@@ -12,7 +12,7 @@ const dayParameter = (scheduleTarget) => {
     { officeHour: x, exhibition: y } });
   return genericObject(scheduleTarget);
 };
-
+// função relacionada ao parâmetro ser segunda-feira
 const mondayDay = (scheduleTarget) => {
   if (scheduleTarget === 'Monday') {
     return {
@@ -28,12 +28,18 @@ function getSchedule(scheduleTarget) {
     return species.find((specie) => specie.name === scheduleTarget).availability;
   }
   // relacionado ao parâmetro ser algum dia da semana e ser monday
-  const daysOfWeek = ['Sunday', 'Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday'];
+  const daysOfWeek = ['Friday', 'Saturday', 'Sunday', 'Monday', 'Tuesday', 'Wednesday', 'Thursday'];
   if (daysOfWeek.includes(scheduleTarget)) return mondayDay(scheduleTarget);
 
   // relacionado ao parâmetro não condizer com dia ou animal
   if (!daysOfWeek.includes(scheduleTarget)
-  && !allAnimals.includes(scheduleTarget)) return daysOfWeek.map((day) => dayParameter(day));
-} console.log(getSchedule('qualquercoisa'));
+  && !allAnimals.includes(scheduleTarget)) {
+    const x = daysOfWeek.map((day) => dayParameter(day));
+    x.splice(3, 1, {
+      Monday: { officeHour: 'CLOSED', exhibition: 'The zoo will be closed!' },
+    });
+    return Object.assign({}, ...x);
+  }
+}
 
 module.exports = getSchedule;
