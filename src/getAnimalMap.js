@@ -313,15 +313,19 @@ const genericObjectSortedFemale = ({
   SW: SWSortedFemale,
 });
 
+function animalSexGenre({ sex: y }) {
+  if (y === 'male') return genericObjectMale;
+  if (y === 'female') return genericObjectFemale;
+  return genericObject;
+}
+
 function genericReturn({ includeNames: x, sex: y, sorted: z }) {
   if (z === true) {
     if (y === 'male') return genericObjectSortedMale;
     if (y === 'female') return genericObjectSortedFemale;
     return genericObjectSorted;
   }
-  if (y === 'male') return genericObjectMale;
-  if (y === 'female') return genericObjectFemale;
-  return genericObject;
+  return animalSexGenre({ sex: y });
 }
 
 function getAnimalMap({ includeNames: x, sex: y, sorted: z } = {}) {
