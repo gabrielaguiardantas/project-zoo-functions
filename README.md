@@ -4,6 +4,8 @@ Sexto e último projeto do módulo de Fundamentos do curso de Desenvolvimento We
 
 ## Demonstração: ##
 
+![zoo-functions](https://user-images.githubusercontent.com/110852595/212326757-0b2de195-d2ea-49a8-a80d-20606d249a96.png)
+
 
 <!-- Olá, Tryber!
 Esse é apenas um arquivo inicial para o README do seu projeto no qual você pode customizar e reutilizar todas as vezes que for executar o trybe-publisher.
