@@ -1,4 +1,10 @@
-# :construction: README customizado em construção ! :construction:
+# Projeto Zoo Functions #
+
+Sexto e último projeto do módulo de Fundamentos do curso de Desenvolvimento Web da Trybe. Neste projeto foi exigido desenvolver funções que retornassem dados de um Zoológico e testes para as mesmas. Necessitou-se conhecimento de HOFs e Javascript ES6, além de todo o conhecimento de Javascript adquirido no módulo.
+
+## Demonstração: ##
+
+
 <!-- Olá, Tryber!
 Esse é apenas um arquivo inicial para o README do seu projeto no qual você pode customizar e reutilizar todas as vezes que for executar o trybe-publisher.
 
