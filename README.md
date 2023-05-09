@@ -8,3 +8,4 @@ Sexto e último projeto do módulo de Fundamentos do curso de Desenvolvimento We
 
 ## Features implementadas: ##
 
+![features-project5](https://github.com/gabrielaguiardantas/project-zoo-functions/assets/110852595/d6496e46-dd7f-45b1-9385-1092a8c4979b)
